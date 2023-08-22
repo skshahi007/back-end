@@ -27,7 +27,7 @@ export const adminGoogleCallbackOauthRoute = {
                     return res.status(500).json(err);
                 }
         
-                res.redirect(`http://localhost:3000/guru/login/${token}`)
+                res.redirect(`${process.env.HOST}/guru/login/${token}`)
             } );
 
     }
