@@ -27,7 +27,7 @@ export const googleCallbackOauthRoute = {
                     return res.status(500).json(err);
                 }
         
-                res.redirect(`http://localhost:3000/login/${token}`)
+                res.redirect(`${process.env.HOST}/login/${token}`)
             } );
 
     }
